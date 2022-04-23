@@ -60,7 +60,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 {% if messages %}
                     {% for message in messages %}
                         <div class="alert alert-{{ message.tags }}">
@@ -70,6 +70,16 @@
                 {% endif %}
                 {% block content %}
                 {% endblock content %}
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                   <div class="card-header">Notice Bord</div>
+                   <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Latest Posts</li>
+                      <li class="list-group-item">Announcement</li>
+                      <li class="list-group-item">Etc</li>
+                  </ul>
+                </div>
             </div>
         </div>
     </div>
